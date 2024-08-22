@@ -6,8 +6,9 @@ original = imageio.imread("../img/wide_rock.jpg")
 
 
 final = original.copy()
-
-final = sorting.sort_image_rows(final)
+final = rescale.increase_pixels(final,2**2)
+final = dithering.strange_dither(final,2)
+final = recolor.grayscale(final)
 
 image_to_save = final
 image_to_save = image_to_save.astype(np.uint8)

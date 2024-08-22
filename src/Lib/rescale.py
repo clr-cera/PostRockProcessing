@@ -24,8 +24,8 @@ def upscale(img, scale):
     
     return upscale_img
 
-def increase_pixels(img, shape):
-    downscale_image = downscale(img, shape)
-    final_image = upscale(downscale_image, shape)
+def increase_pixels(img, scale):
+    downscale_image = downscale(img, scale)
+    final_image = upscale(downscale_image, scale)
 
     return final_image

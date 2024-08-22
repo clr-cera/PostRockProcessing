@@ -1,1 +1,1 @@
-__all__ = ["rescale", "dithering", "sorting"]
+__all__ = ["rescale", "dithering", "sorting", "recolor"]

@@ -33,4 +33,4 @@ def strange_dither(img, color_number, spread=0):
 
             dithered_img[i][j] = color
 
-    return dithered_img
+    return 255*dithered_img.astype(np.uint)
