@@ -1,4 +1,4 @@
-import imageio
+import imageio.v3 as imageio
 import numpy as np
 from Lib import *
 

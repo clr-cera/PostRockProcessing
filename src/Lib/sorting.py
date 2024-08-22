@@ -6,8 +6,7 @@ def luminance(pixel):
 def sort_image_rows(img):
     sorted_img = np.ndarray(img.shape,dtype='uint')
     for i in range(img.shape[0]):
-        sorted_img[i] = sorted(img[i], key=luminance)
-            
-    
+        sorted_img[i] = sorted(img[i], key=luminance) 
+
     return sorted_img
 
