@@ -2,11 +2,11 @@ import imageio.v3 as imageio
 import numpy as np
 from Lib import *
 
-original = imageio.imread("../img/hand_small.jpg")
+original = imageio.imread("../img/sleepy_i_look_terrible.jpg")
 
 
 final = original.copy()
-final = rescale.increase_pixels(final, 2**4)
+final = rescale.increase_pixels(final, 2**3)
 edge = edging.paint_edge(final)
 edge = recolor.b_w_binary(2*edge)
 final = (0.7*final + 0.3*edge)
